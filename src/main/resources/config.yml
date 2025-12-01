@@ -1,0 +1,112 @@
+# ═══════════════════════════════════════════════════════════════════
+#                    VK_Compactar - Configuração Principal
+#                         Desenvolvido por VulcanDev
+# ═══════════════════════════════════════════════════════════════════
+
+# Configurações Gerais
+geral:
+  # Ativar/desativar o plugin
+  ativado: true
+  
+  # Ativar proteção contra renomeação em bigorna
+  protecao-renomeacao: true
+  
+  # Ativar proteção contra duplicação
+  protecao-duplicacao: true
+  
+  # Mundos onde o plugin está ativado (deixe vazio para todos)
+  mundos-permitidos:
+    - world
+    - world_nether
+    - world_the_end
+  
+  # Delay entre compactações (em ticks - 20 ticks = 1 segundo)
+  delay-compactacao: 10
+
+# ═══════════════════════════════════════════════════════════════════
+#                    Auto Compactador (Item Físico)
+# ═══════════════════════════════════════════════════════════════════
+# O Auto Compactador é um item físico que o jogador deve ter no
+# inventário para ativar a compactação automática. O item verifica
+# as permissões do jogador para cada tipo de item.
+# ═══════════════════════════════════════════════════════════════════
+auto-compactador:
+  # Ativar/desativar o sistema de auto compactador
+  ativado: true
+  
+  # Delay entre compactações automáticas (em segundos)
+  delay-segundos: 5
+  
+  # Material do item (Ex: EMERALD, DIAMOND, NETHER_STAR, etc.)
+  material: "EMERALD"
+  
+  # Nome do item (suporta cores com &)
+  nome: "&a&lAuto Compactador"
+  
+  # Lore do item (suporta cores com &)
+  lore:
+    - ""
+    - "&7Tenha este item no inventário"
+    - "&7para compactar automaticamente!"
+    - ""
+    - "&eDelay: &f5 segundos"
+    - ""
+    - "&aRequer permissão por item!"
+
+# Configurações de Feedback Visual e Sonoro
+feedback:
+  # Som ao compactar
+  som:
+    ativado: true
+    tipo: "LEVEL_UP"
+    volume: 1.0
+    pitch: 1.0
+  
+  # Partículas ao compactar
+  particulas:
+    ativado: true
+    tipo: "VILLAGER_HAPPY"
+    quantidade: 20
+  
+  # Mensagem de título ao compactar
+  titulo:
+    ativado: true
+    titulo: "&a&lItem Compactado!"
+    subtitulo: "&7{item} x{quantidade}"
+    fade-in: 10
+    stay: 40
+    fade-out: 10
+  
+  # ActionBar ao compactar
+  actionbar:
+    ativado: true
+    mensagem: "&a✔ &7Você compactou &a{quantidade}x {item}"
+
+# Configurações de Performance
+performance:
+  # Usar async para operações pesadas
+  usar-async: false
+  
+  # Limite de itens processados por tick
+  limite-por-tick: 100
+  
+  # Cache de itens compactados (em segundos)
+  cache-tempo: 300
+
+# Configurações de Proteção
+protecao:
+  # Bloquear itens com nomes personalizados de serem compactados
+  bloquear-itens-renomeados: false
+  
+  # Verificar integridade do NBT antes de descompactar
+  verificar-nbt: true
+  
+  # Logar tentativas de exploit
+  logar-exploits: true
+
+# Itens bloqueados (não podem ser compactados)
+itens-bloqueados:
+  - BEDROCK
+  - BARRIER
+  - COMMAND
+  - COMMAND_MINECART

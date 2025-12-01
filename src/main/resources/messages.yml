@@ -1,0 +1,53 @@
+# ═══════════════════════════════════════════════════════════════════
+#                    VK_Compactar - Mensagens
+#                         Desenvolvido por VulcanDev
+# ═══════════════════════════════════════════════════════════════════
+# Variáveis disponíveis:
+# {player} - Nome do jogador
+# {item} - Nome do item
+# {quantidade} - Quantidade de itens
+# {necessario} - Quantidade necessária para compactar
+# ═══════════════════════════════════════════════════════════════════
+
+# Prefixo das mensagens
+prefixo: "&8[&aCompactar&8] "
+
+# Mensagens de Compactação
+compactacao:
+  sucesso: "&aSucesso! &7Você compactou &a{quantidade}x {item}&7."
+  automatica-sucesso: "&aCompactação automática! &7{quantidade} itens de {tipos} tipos compactados."
+  erro-quantidade: "&cVocê não possui itens suficientes para compactar!"
+  erro-item: "&cEste item não pode ser compactado!"
+  erro-inventario-cheio: "&cSeu inventário está cheio! O item foi dropado no chão."
+  item-dropado: "&eO item compactado foi dropado no chão."
+
+# Mensagens de Comandos
+comandos:
+  uso-compactar: "&eUso: &7/compactar"
+  uso-compact: "&eUso: &7/compact <reload|give|info>"
+  reload-sucesso: "&aConfigurações recarregadas com sucesso!"
+  give-sucesso: "&aVocê deu &e{quantidade}x {item} compactado &apara &e{player}&a."
+  give-recebido: "&aVocê recebeu &e{quantidade}x {item} compactado&a."
+  give-erro-player: "&cJogador não encontrado!"
+  give-erro-item: "&cItem inválido!"
+  info-header: "&a&l═══ VK_Compactar Info ═══"
+  info-versao: "&7Versão: &a{versao}"
+  info-itens: "&7Itens compactáveis: &a{total}"
+  info-autor: "&7Autor: &aVulcanDev"
+
+# Mensagens de Permissão
+permissoes:
+  sem-permissao: "&cVocê não tem permissão para usar este comando!"
+  sem-permissao-auto: "&cVocê não tem permissão para compactação automática!"
+
+# Mensagens de Proteção
+protecao:
+  renomeacao-bloqueada: "&cVocê não pode renomear itens compactados!"
+  item-adulterado: "&cEste item foi adulterado e não pode ser usado!"
+  duplicacao-detectada: "&cTentativa de duplicação detectada e bloqueada!"
+
+# Mensagens de Erro
+erros:
+  erro-generico: "&cOcorreu um erro. Tente novamente."
+  mundo-desativado: "&cO plugin está desativado neste mundo!"
+  plugin-desativado: "&cO plugin está temporariamente desativado!"

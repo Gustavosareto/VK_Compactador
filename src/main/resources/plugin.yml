@@ -1,0 +1,213 @@
+name: VK_Compactar
+version: 1.2.0
+main: com.vulcandev.compactar.VKCompactar
+author: VulcanDev
+description: Plugin de compactação automática e manual de itens para Minecraft 1.8.8
+
+commands:
+  compactar:
+    description: Compacta os itens do seu inventário
+    usage: /<command>
+    permission: compact.use
+    permission-message: §cVocê não tem permissão para usar este comando!
+    
+  compact:
+    description: Comandos administrativos do plugin de compactação
+    usage: /<command> <reload|give|autocompactador|info>
+    aliases: [compactadmin, vkcompact]
+
+permissions:
+  # Permissão principal
+  compact.use:
+    description: Permite ao jogador compactar itens manualmente
+    default: op
+    
+  compact.admin:
+    description: Acesso total às funções administrativas
+    default: op
+    children:
+      compact.reload: true
+      compact.give: true
+      compact.use: true
+      compact.autocompactador: true
+      compact.item.*: true
+      
+  compact.reload:
+    description: Permite recarregar as configurações do plugin
+    default: op
+    
+  compact.give:
+    description: Permite dar itens compactados para outros jogadores
+    default: op
+    
+  compact.autocompactador:
+    description: Permite usar o Auto Compactador (ter no inventário)
+    default: op
+
+  compact.autocompactador.give:
+    description: Permite dar o item Auto Compactador para jogadores
+    default: op
+
+  # Permissão para todos os itens
+  compact.item.*:
+    description: Permite compactar todos os itens
+    default: op
+    children:
+      compact.item.minerios: true
+      compact.item.plantacoes: true
+
+  # ══════════════════════════════════════
+  #              MINÉRIOS
+  # ══════════════════════════════════════
+  compact.item.minerios:
+    description: Permite compactar todos os minérios
+    default: op
+    children:
+      compact.item.coal: true
+      compact.item.iron_ingot: true
+      compact.item.gold_ingot: true
+      compact.item.diamond: true
+      compact.item.emerald: true
+      compact.item.redstone: true
+      compact.item.lapis_lazuli: true
+      compact.item.quartz: true
+      compact.item.iron_ore: true
+      compact.item.gold_ore: true
+      compact.item.diamond_ore: true
+      compact.item.coal_ore: true
+      compact.item.emerald_ore: true
+      compact.item.redstone_ore: true
+      compact.item.lapis_ore: true
+
+  compact.item.coal:
+    description: Permite compactar carvão
+    default: op
+    
+  compact.item.iron_ingot:
+    description: Permite compactar ferro
+    default: op
+    
+  compact.item.gold_ingot:
+    description: Permite compactar ouro
+    default: op
+    
+  compact.item.diamond:
+    description: Permite compactar diamante
+    default: op
+    
+  compact.item.emerald:
+    description: Permite compactar esmeralda
+    default: op
+    
+  compact.item.redstone:
+    description: Permite compactar redstone
+    default: op
+    
+  compact.item.lapis_lazuli:
+    description: Permite compactar lápis-lazúli
+    default: op
+    
+  compact.item.quartz:
+    description: Permite compactar quartzo
+    default: op
+    
+  compact.item.iron_ore:
+    description: Permite compactar minério de ferro
+    default: op
+    
+  compact.item.gold_ore:
+    description: Permite compactar minério de ouro
+    default: op
+    
+  compact.item.diamond_ore:
+    description: Permite compactar minério de diamante
+    default: op
+    
+  compact.item.coal_ore:
+    description: Permite compactar minério de carvão
+    default: op
+    
+  compact.item.emerald_ore:
+    description: Permite compactar minério de esmeralda
+    default: op
+    
+  compact.item.redstone_ore:
+    description: Permite compactar minério de redstone
+    default: op
+    
+  compact.item.lapis_ore:
+    description: Permite compactar minério de lápis
+    default: op
+
+  # ══════════════════════════════════════
+  #              PLANTAÇÕES
+  # ══════════════════════════════════════
+  compact.item.plantacoes:
+    description: Permite compactar todas as plantações
+    default: op
+    children:
+      compact.item.wheat: true
+      compact.item.carrot_item: true
+      compact.item.potato_item: true
+      compact.item.sugar_cane: true
+      compact.item.cactus: true
+      compact.item.melon: true
+      compact.item.pumpkin: true
+      compact.item.nether_warts: true
+      compact.item.cocoa: true
+      compact.item.seeds: true
+      compact.item.pumpkin_seeds: true
+      compact.item.melon_seeds: true
+      compact.item.apple: true
+
+  compact.item.wheat:
+    description: Permite compactar trigo
+    default: op
+    
+  compact.item.carrot_item:
+    description: Permite compactar cenoura
+    default: op
+    
+  compact.item.potato_item:
+    description: Permite compactar batata
+    default: op
+    
+  compact.item.sugar_cane:
+    description: Permite compactar cana-de-açúcar
+    default: op
+    
+  compact.item.cactus:
+    description: Permite compactar cacto
+    default: op
+    
+  compact.item.melon:
+    description: Permite compactar melancia
+    default: op
+    
+  compact.item.pumpkin:
+    description: Permite compactar abóbora
+    default: op
+    
+  compact.item.nether_warts:
+    description: Permite compactar fungo do nether
+    default: op
+    
+  compact.item.cocoa:
+    description: Permite compactar cacau
+    default: op
+    
+  compact.item.seeds:
+    description: Permite compactar sementes
+    default: op
+    
+  compact.item.pumpkin_seeds:
+    description: Permite compactar sementes de abóbora
+    default: op
+    
+  compact.item.melon_seeds:
+    description: Permite compactar sementes de melancia
+    default: op
+    
+  compact.item.apple:
+    description: Permite compactar maçã
+    default: op
