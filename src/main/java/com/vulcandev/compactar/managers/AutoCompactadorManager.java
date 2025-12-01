@@ -76,12 +76,8 @@ public class AutoCompactadorManager {
             return;
         }
         
-        // Debug
-        plugin.getLogger().info("Auto Compactador detectado para: " + player.getName());
-        
         // Verificar permissão básica
         if (!player.hasPermission("compact.autocompactador")) {
-            plugin.getLogger().warning("Jogador " + player.getName() + " não tem permissão compact.autocompactador");
             return;
         }
         
@@ -120,8 +116,6 @@ public class AutoCompactadorManager {
         CompactManager compactManager = plugin.getCompactManager();
         Map<Material, Integer> result = new HashMap<>();
         
-        plugin.getLogger().info("Iniciando compactação para: " + player.getName());
-        
         for (CompactableItem compactableItem : compactManager.getCompactableItems().values()) {
             Material material = compactableItem.getMaterial();
             String materialName = material.name().toLowerCase();
@@ -140,14 +134,12 @@ public class AutoCompactadorManager {
             // Tentar compactar
             int compacted = compactManager.compactItems(player, material);
             if (compacted > 0) {
-                plugin.getLogger().info("Compactados " + compacted + " itens de " + material.name() + " para " + player.getName());
                 result.put(material, compacted);
             }
         }
         
         // Também tentar ultra compactar
         if (!result.isEmpty()) {
-            plugin.getLogger().info("Tentando ultra compactação...");
             compactManager.compactToUltra(player, result);
         }
     }
