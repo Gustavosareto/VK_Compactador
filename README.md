@@ -23,10 +23,11 @@ O plugin utiliza um sistema de compactação em dois níveis:
 
 | Nível | Quantidade | Resultado |
 |-------|------------|-----------|
-| **Compactado** | 2304 itens normais | 1 Item Compactado |
-| **Ultra Compactado** | 2304 itens compactados | 1 Item Ultra Compactado |
+| **Compactado** | 2240 itens normais | 1 Item Compactado |
+| **Ultra Compactado** | 2240 itens compactados | 1 Item Ultra Compactado |
 
-> **Nota**: 1 Item Ultra Compactado = 5.308.416 itens normais!
+> **Nota**: 1 Item Ultra Compactado = 5.017.600 itens normais!
+> **Quantidade ajustada**: 2240 itens (35 stacks) para caber no inventário com o Auto Compactador (1 slot)
 
 ## 🎮 Comandos
 
@@ -90,7 +91,7 @@ O Auto Compactador é um **item físico** que deve estar no inventário do jogad
 1. Obtenha o item com `/compact autocompactador`
 2. Mantenha o item no inventário (ocupa 1 slot)
 3. A cada 5 segundos, o sistema verifica seu inventário
-4. Se tiver 2304+ de algum item, compacta automaticamente
+4. Se tiver 2240+ de algum item, compacta automaticamente
 5. Funciona de forma **progressiva** - vai compactando aos poucos conforme você coleta
 
 ### Exemplo Prático:
@@ -98,9 +99,9 @@ O Auto Compactador é um **item físico** que deve estar no inventário do jogad
 Você está minerando com Auto Compactador no inventário:
 - Minera diamantes normalmente
 - A cada 5 segundos o sistema verifica
-- Quando atingir 2304 diamantes (36 stacks), compacta em 1 item
+- Quando atingir 2240 diamantes (35 stacks), compacta em 1 item
 - Você continua minerando e o processo se repete
-- Não precisa ter tudo de uma vez no inventário!
+- Sistema otimizado: 35 slots de itens + 1 slot do Auto Compactador = 36 slots
 ```
 
 ### Como Usar:
@@ -215,11 +216,11 @@ O arquivo JAR será gerado em `target/VK_Compactar-1.2.0.jar`
 - ✅ Sistema de verificação de permissões no Auto Compactador
 - ✅ Comando `/compact autocompactador` para dar o item
 - ✅ Configuração completa do Auto Compactador no config.yml
+- ✅ Quantidade ajustada para 2240 itens (35 stacks) para compatibilidade com Auto Compactador
 
 ### v1.1.0
 - ✅ Removida funcionalidade de descompactação
-- ✅ Sistema de Ultra Compactação (2304 → 1 Ultra)
-- ✅ Quantidade de compactação alterada para 2304 itens
+- ✅ Sistema de Ultra Compactação
 - ✅ Otimizações de código
 
 ### v1.0.0

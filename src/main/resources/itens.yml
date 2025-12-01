@@ -6,16 +6,16 @@
 # 
 # Estrutura:
 #   NOME_DO_ITEM:
-#     quantidade: Quantidade necessária para compactar (2304 = inventário cheio)
+#     quantidade: Quantidade necessária para compactar (2240 = inventário cheio)
 #     nome: Nome do item compactado (suporta cores com &)
 #     lore: Descrição do item compactado
 #     data: Data value do item (opcional, padrão 0)
 #     material: Material alternativo (opcional)
 #
 # Sistema Ultra Compactado:
-#   - 2304 itens normais = 1 item Compactado
-#   - 2304 itens Compactados = 1 item Ultra Compactado
-#   - 1 Ultra Compactado = 5.308.416 itens normais!
+#   - 2240 itens normais = 1 item Compactado
+#   - 2240 itens Compactados = 1 item Ultra Compactado
+#   - 1 Ultra Compactado = 5.017.600 itens normais!
 # ═══════════════════════════════════════════════════════════════════
 
 compactaveis:
@@ -25,215 +25,215 @@ compactaveis:
 # ══════════════════════════════════════
 
   COAL:
-    quantidade: 2304
+    quantidade: 2240
     nome: "&8Carvão Compactado"
     lore:
       - ""
-      - "&7Contém: &f2304 Carvões"
+      - "&7Contém: &f2240 Carvões"
       - "&7Tipo: &fMinério"
     nome_ultra: "&5&lCarvão Ultra Compactado"
     lore_ultra:
       - ""
-      - "&7Contém: &f2304 Carvões Compactados"
-      - "&7Total: &d5.308.416 Carvões"
+      - "&7Contém: &f2240 Carvões Compactados"
+      - "&7Total: &d5.017.600 Carvões"
       - "&7Tipo: &5Ultra Minério"
     
   IRON_INGOT:
-    quantidade: 2304
+    quantidade: 2240
     nome: "&fFerro Compactado"
     lore:
       - ""
-      - "&7Contém: &f2304 Ferros"
+      - "&7Contém: &f2240 Ferros"
       - "&7Tipo: &fMinério"
     nome_ultra: "&5&lFerro Ultra Compactado"
     lore_ultra:
       - ""
-      - "&7Contém: &f2304 Ferros Compactados"
-      - "&7Total: &d5.308.416 Ferros"
+      - "&7Contém: &f2240 Ferros Compactados"
+      - "&7Total: &d5.017.600 Ferros"
       - "&7Tipo: &5Ultra Minério"
     
   GOLD_INGOT:
-    quantidade: 2304
+    quantidade: 2240
     nome: "&6Ouro Compactado"
     lore:
       - ""
-      - "&7Contém: &f2304 Ouros"
+      - "&7Contém: &f2240 Ouros"
       - "&7Tipo: &fMinério"
     nome_ultra: "&5&lOuro Ultra Compactado"
     lore_ultra:
       - ""
-      - "&7Contém: &f2304 Ouros Compactados"
-      - "&7Total: &d5.308.416 Ouros"
+      - "&7Contém: &f2240 Ouros Compactados"
+      - "&7Total: &d5.017.600 Ouros"
       - "&7Tipo: &5Ultra Minério"
     
   DIAMOND:
-    quantidade: 2304
+    quantidade: 2240
     nome: "&bDiamante Compactado"
     lore:
       - ""
-      - "&7Contém: &f2304 Diamantes"
+      - "&7Contém: &f2240 Diamantes"
       - "&7Tipo: &fMinério"
     nome_ultra: "&5&lDiamante Ultra Compactado"
     lore_ultra:
       - ""
-      - "&7Contém: &f2304 Diamantes Compactados"
-      - "&7Total: &d5.308.416 Diamantes"
+      - "&7Contém: &f2240 Diamantes Compactados"
+      - "&7Total: &d5.017.600 Diamantes"
       - "&7Tipo: &5Ultra Minério"
     
   EMERALD:
-    quantidade: 2304
+    quantidade: 2240
     nome: "&aEsmeralda Compactada"
     lore:
       - ""
-      - "&7Contém: &f2304 Esmeraldas"
+      - "&7Contém: &f2240 Esmeraldas"
       - "&7Tipo: &fMinério"
     nome_ultra: "&5&lEsmeralda Ultra Compactada"
     lore_ultra:
       - ""
-      - "&7Contém: &f2304 Esmeraldas Compactadas"
-      - "&7Total: &d5.308.416 Esmeraldas"
+      - "&7Contém: &f2240 Esmeraldas Compactadas"
+      - "&7Total: &d5.017.600 Esmeraldas"
       - "&7Tipo: &5Ultra Minério"
     
   REDSTONE:
-    quantidade: 2304
+    quantidade: 2240
     nome: "&cRedstone Compactada"
     lore:
       - ""
-      - "&7Contém: &f2304 Redstones"
+      - "&7Contém: &f2240 Redstones"
       - "&7Tipo: &fMinério"
     nome_ultra: "&5&lRedstone Ultra Compactada"
     lore_ultra:
       - ""
-      - "&7Contém: &f2304 Redstones Compactadas"
-      - "&7Total: &d5.308.416 Redstones"
+      - "&7Contém: &f2240 Redstones Compactadas"
+      - "&7Total: &d5.017.600 Redstones"
       - "&7Tipo: &5Ultra Minério"
     
   LAPIS_LAZULI:
-    quantidade: 2304
+    quantidade: 2240
     nome: "&9Lápis-Lazúli Compactado"
     lore:
       - ""
-      - "&7Contém: &f2304 Lápis-Lazúlis"
+      - "&7Contém: &f2240 Lápis-Lazúlis"
       - "&7Tipo: &fMinério"
     nome_ultra: "&5&lLápis-Lazúli Ultra Compactado"
     lore_ultra:
       - ""
-      - "&7Contém: &f2304 Lápis-Lazúlis Compactados"
-      - "&7Total: &d5.308.416 Lápis-Lazúlis"
+      - "&7Contém: &f2240 Lápis-Lazúlis Compactados"
+      - "&7Total: &d5.017.600 Lápis-Lazúlis"
       - "&7Tipo: &5Ultra Minério"
     data: 4
     material: INK_SACK
     
   QUARTZ:
-    quantidade: 2304
+    quantidade: 2240
     nome: "&fQuartzo do Nether Compactado"
     lore:
       - ""
-      - "&7Contém: &f2304 Quartzos"
+      - "&7Contém: &f2240 Quartzos"
       - "&7Tipo: &fMinério"
     nome_ultra: "&5&lQuartzo Ultra Compactado"
     lore_ultra:
       - ""
-      - "&7Contém: &f2304 Quartzos Compactados"
-      - "&7Total: &d5.308.416 Quartzos"
+      - "&7Contém: &f2240 Quartzos Compactados"
+      - "&7Total: &d5.017.600 Quartzos"
       - "&7Tipo: &5Ultra Minério"
     
   IRON_ORE:
-    quantidade: 2304
+    quantidade: 2240
     nome: "&fMinério de Ferro Compactado"
     lore:
       - ""
-      - "&7Contém: &f2304 Minérios de Ferro"
+      - "&7Contém: &f2240 Minérios de Ferro"
       - "&7Tipo: &fMinério"
     nome_ultra: "&5&lMinério de Ferro Ultra Compactado"
     lore_ultra:
       - ""
-      - "&7Contém: &f2304 Minérios Compactados"
-      - "&7Total: &d5.308.416 Minérios de Ferro"
+      - "&7Contém: &f2240 Minérios Compactados"
+      - "&7Total: &d5.017.600 Minérios de Ferro"
       - "&7Tipo: &5Ultra Minério"
     
   GOLD_ORE:
-    quantidade: 2304
+    quantidade: 2240
     nome: "&6Minério de Ouro Compactado"
     lore:
       - ""
-      - "&7Contém: &f2304 Minérios de Ouro"
+      - "&7Contém: &f2240 Minérios de Ouro"
       - "&7Tipo: &fMinério"
     nome_ultra: "&5&lMinério de Ouro Ultra Compactado"
     lore_ultra:
       - ""
-      - "&7Contém: &f2304 Minérios Compactados"
-      - "&7Total: &d5.308.416 Minérios de Ouro"
+      - "&7Contém: &f2240 Minérios Compactados"
+      - "&7Total: &d5.017.600 Minérios de Ouro"
       - "&7Tipo: &5Ultra Minério"
     
   DIAMOND_ORE:
-    quantidade: 2304
+    quantidade: 2240
     nome: "&bMinério de Diamante Compactado"
     lore:
       - ""
-      - "&7Contém: &f2304 Minérios de Diamante"
+      - "&7Contém: &f2240 Minérios de Diamante"
       - "&7Tipo: &fMinério"
     nome_ultra: "&5&lMinério de Diamante Ultra Compactado"
     lore_ultra:
       - ""
-      - "&7Contém: &f2304 Minérios Compactados"
-      - "&7Total: &d5.308.416 Minérios de Diamante"
+      - "&7Contém: &f2240 Minérios Compactados"
+      - "&7Total: &d5.017.600 Minérios de Diamante"
       - "&7Tipo: &5Ultra Minério"
     
   COAL_ORE:
-    quantidade: 2304
+    quantidade: 2240
     nome: "&8Minério de Carvão Compactado"
     lore:
       - ""
-      - "&7Contém: &f2304 Minérios de Carvão"
+      - "&7Contém: &f2240 Minérios de Carvão"
       - "&7Tipo: &fMinério"
     nome_ultra: "&5&lMinério de Carvão Ultra Compactado"
     lore_ultra:
       - ""
-      - "&7Contém: &f2304 Minérios Compactados"
-      - "&7Total: &d5.308.416 Minérios de Carvão"
+      - "&7Contém: &f2240 Minérios Compactados"
+      - "&7Total: &d5.017.600 Minérios de Carvão"
       - "&7Tipo: &5Ultra Minério"
     
   EMERALD_ORE:
-    quantidade: 2304
+    quantidade: 2240
     nome: "&aMinério de Esmeralda Compactado"
     lore:
       - ""
-      - "&7Contém: &f2304 Minérios de Esmeralda"
+      - "&7Contém: &f2240 Minérios de Esmeralda"
       - "&7Tipo: &fMinério"
     nome_ultra: "&5&lMinério de Esmeralda Ultra Compactado"
     lore_ultra:
       - ""
-      - "&7Contém: &f2304 Minérios Compactados"
-      - "&7Total: &d5.308.416 Minérios de Esmeralda"
+      - "&7Contém: &f2240 Minérios Compactados"
+      - "&7Total: &d5.017.600 Minérios de Esmeralda"
       - "&7Tipo: &5Ultra Minério"
     
   REDSTONE_ORE:
-    quantidade: 2304
+    quantidade: 2240
     nome: "&cMinério de Redstone Compactado"
     lore:
       - ""
-      - "&7Contém: &f2304 Minérios de Redstone"
+      - "&7Contém: &f2240 Minérios de Redstone"
       - "&7Tipo: &fMinério"
     nome_ultra: "&5&lMinério de Redstone Ultra Compactado"
     lore_ultra:
       - ""
-      - "&7Contém: &f2304 Minérios Compactados"
-      - "&7Total: &d5.308.416 Minérios de Redstone"
+      - "&7Contém: &f2240 Minérios Compactados"
+      - "&7Total: &d5.017.600 Minérios de Redstone"
       - "&7Tipo: &5Ultra Minério"
     
   LAPIS_ORE:
-    quantidade: 2304
+    quantidade: 2240
     nome: "&9Minério de Lápis Compactado"
     lore:
       - ""
-      - "&7Contém: &f2304 Minérios de Lápis"
+      - "&7Contém: &f2240 Minérios de Lápis"
       - "&7Tipo: &fMinério"
     nome_ultra: "&5&lMinério de Lápis Ultra Compactado"
     lore_ultra:
       - ""
-      - "&7Contém: &f2304 Minérios Compactados"
-      - "&7Total: &d5.308.416 Minérios de Lápis"
+      - "&7Contém: &f2240 Minérios Compactados"
+      - "&7Total: &d5.017.600 Minérios de Lápis"
       - "&7Tipo: &5Ultra Minério"
 
 # ══════════════════════════════════════
@@ -241,185 +241,185 @@ compactaveis:
 # ══════════════════════════════════════
 
   WHEAT:
-    quantidade: 2304
+    quantidade: 2240
     nome: "&eTrigo Compactado"
     lore:
       - ""
-      - "&7Contém: &f2304 Trigos"
+      - "&7Contém: &f2240 Trigos"
       - "&7Tipo: &fPlantação"
     nome_ultra: "&5&lTrigo Ultra Compactado"
     lore_ultra:
       - ""
-      - "&7Contém: &f2304 Trigos Compactados"
-      - "&7Total: &d5.308.416 Trigos"
+      - "&7Contém: &f2240 Trigos Compactados"
+      - "&7Total: &d5.017.600 Trigos"
       - "&7Tipo: &5Ultra Plantação"
     
   CARROT_ITEM:
-    quantidade: 2304
+    quantidade: 2240
     nome: "&6Cenoura Compactada"
     lore:
       - ""
-      - "&7Contém: &f2304 Cenouras"
+      - "&7Contém: &f2240 Cenouras"
       - "&7Tipo: &fPlantação"
     nome_ultra: "&5&lCenoura Ultra Compactada"
     lore_ultra:
       - ""
-      - "&7Contém: &f2304 Cenouras Compactadas"
-      - "&7Total: &d5.308.416 Cenouras"
+      - "&7Contém: &f2240 Cenouras Compactadas"
+      - "&7Total: &d5.017.600 Cenouras"
       - "&7Tipo: &5Ultra Plantação"
     
   POTATO_ITEM:
-    quantidade: 2304
+    quantidade: 2240
     nome: "&6Batata Compactada"
     lore:
       - ""
-      - "&7Contém: &f2304 Batatas"
+      - "&7Contém: &f2240 Batatas"
       - "&7Tipo: &fPlantação"
     nome_ultra: "&5&lBatata Ultra Compactada"
     lore_ultra:
       - ""
-      - "&7Contém: &f2304 Batatas Compactadas"
-      - "&7Total: &d5.308.416 Batatas"
+      - "&7Contém: &f2240 Batatas Compactadas"
+      - "&7Total: &d5.017.600 Batatas"
       - "&7Tipo: &5Ultra Plantação"
     
   SUGAR_CANE:
-    quantidade: 2304
+    quantidade: 2240
     nome: "&aCana-de-Açúcar Compactada"
     lore:
       - ""
-      - "&7Contém: &f2304 Canas"
+      - "&7Contém: &f2240 Canas"
       - "&7Tipo: &fPlantação"
     nome_ultra: "&5&lCana-de-Açúcar Ultra Compactada"
     lore_ultra:
       - ""
-      - "&7Contém: &f2304 Canas Compactadas"
-      - "&7Total: &d5.308.416 Canas"
+      - "&7Contém: &f2240 Canas Compactadas"
+      - "&7Total: &d5.017.600 Canas"
       - "&7Tipo: &5Ultra Plantação"
     
   CACTUS:
-    quantidade: 2304
+    quantidade: 2240
     nome: "&2Cacto Compactado"
     lore:
       - ""
-      - "&7Contém: &f2304 Cactos"
+      - "&7Contém: &f2240 Cactos"
       - "&7Tipo: &fPlantação"
     nome_ultra: "&5&lCacto Ultra Compactado"
     lore_ultra:
       - ""
-      - "&7Contém: &f2304 Cactos Compactados"
-      - "&7Total: &d5.308.416 Cactos"
+      - "&7Contém: &f2240 Cactos Compactados"
+      - "&7Total: &d5.017.600 Cactos"
       - "&7Tipo: &5Ultra Plantação"
     
   MELON:
-    quantidade: 2304
+    quantidade: 2240
     nome: "&aMelancia Compactada"
     lore:
       - ""
-      - "&7Contém: &f2304 Fatias de Melancia"
+      - "&7Contém: &f2240 Fatias de Melancia"
       - "&7Tipo: &fPlantação"
     nome_ultra: "&5&lMelancia Ultra Compactada"
     lore_ultra:
       - ""
-      - "&7Contém: &f2304 Melancias Compactadas"
-      - "&7Total: &d5.308.416 Fatias"
+      - "&7Contém: &f2240 Melancias Compactadas"
+      - "&7Total: &d5.017.600 Fatias"
       - "&7Tipo: &5Ultra Plantação"
     
   PUMPKIN:
-    quantidade: 2304
+    quantidade: 2240
     nome: "&6Abóbora Compactada"
     lore:
       - ""
-      - "&7Contém: &f2304 Abóboras"
+      - "&7Contém: &f2240 Abóboras"
       - "&7Tipo: &fPlantação"
     nome_ultra: "&5&lAbóbora Ultra Compactada"
     lore_ultra:
       - ""
-      - "&7Contém: &f2304 Abóboras Compactadas"
-      - "&7Total: &d5.308.416 Abóboras"
+      - "&7Contém: &f2240 Abóboras Compactadas"
+      - "&7Total: &d5.017.600 Abóboras"
       - "&7Tipo: &5Ultra Plantação"
     
   NETHER_WARTS:
-    quantidade: 2304
+    quantidade: 2240
     nome: "&cFungo do Nether Compactado"
     lore:
       - ""
-      - "&7Contém: &f2304 Fungos"
+      - "&7Contém: &f2240 Fungos"
       - "&7Tipo: &fPlantação"
     nome_ultra: "&5&lFungo do Nether Ultra Compactado"
     lore_ultra:
       - ""
-      - "&7Contém: &f2304 Fungos Compactados"
-      - "&7Total: &d5.308.416 Fungos"
+      - "&7Contém: &f2240 Fungos Compactados"
+      - "&7Total: &d5.017.600 Fungos"
       - "&7Tipo: &5Ultra Plantação"
     
   COCOA:
-    quantidade: 2304
+    quantidade: 2240
     nome: "&6Cacau Compactado"
     lore:
       - ""
-      - "&7Contém: &f2304 Cacaus"
+      - "&7Contém: &f2240 Cacaus"
       - "&7Tipo: &fPlantação"
     nome_ultra: "&5&lCacau Ultra Compactado"
     lore_ultra:
       - ""
-      - "&7Contém: &f2304 Cacaus Compactados"
-      - "&7Total: &d5.308.416 Cacaus"
+      - "&7Contém: &f2240 Cacaus Compactados"
+      - "&7Total: &d5.017.600 Cacaus"
       - "&7Tipo: &5Ultra Plantação"
     data: 3
     material: INK_SACK
 
   SEEDS:
-    quantidade: 2304
+    quantidade: 2240
     nome: "&eSementes Compactadas"
     lore:
       - ""
-      - "&7Contém: &f2304 Sementes"
+      - "&7Contém: &f2240 Sementes"
       - "&7Tipo: &fPlantação"
     nome_ultra: "&5&lSementes Ultra Compactadas"
     lore_ultra:
       - ""
-      - "&7Contém: &f2304 Sementes Compactadas"
-      - "&7Total: &d5.308.416 Sementes"
+      - "&7Contém: &f2240 Sementes Compactadas"
+      - "&7Total: &d5.017.600 Sementes"
       - "&7Tipo: &5Ultra Plantação"
 
   PUMPKIN_SEEDS:
-    quantidade: 2304
+    quantidade: 2240
     nome: "&6Sementes de Abóbora Compactadas"
     lore:
       - ""
-      - "&7Contém: &f2304 Sementes"
+      - "&7Contém: &f2240 Sementes"
       - "&7Tipo: &fPlantação"
     nome_ultra: "&5&lSementes de Abóbora Ultra Compactadas"
     lore_ultra:
       - ""
-      - "&7Contém: &f2304 Sementes Compactadas"
-      - "&7Total: &d5.308.416 Sementes"
+      - "&7Contém: &f2240 Sementes Compactadas"
+      - "&7Total: &d5.017.600 Sementes"
       - "&7Tipo: &5Ultra Plantação"
 
   MELON_SEEDS:
-    quantidade: 2304
+    quantidade: 2240
     nome: "&aSementes de Melancia Compactadas"
     lore:
       - ""
-      - "&7Contém: &f2304 Sementes"
+      - "&7Contém: &f2240 Sementes"
       - "&7Tipo: &fPlantação"
     nome_ultra: "&5&lSementes de Melancia Ultra Compactadas"
     lore_ultra:
       - ""
-      - "&7Contém: &f2304 Sementes Compactadas"
-      - "&7Total: &d5.308.416 Sementes"
+      - "&7Contém: &f2240 Sementes Compactadas"
+      - "&7Total: &d5.017.600 Sementes"
       - "&7Tipo: &5Ultra Plantação"
 
   APPLE:
-    quantidade: 2304
+    quantidade: 2240
     nome: "&cMaçã Compactada"
     lore:
       - ""
-      - "&7Contém: &f2304 Maçãs"
+      - "&7Contém: &f2240 Maçãs"
       - "&7Tipo: &fPlantação"
     nome_ultra: "&5&lMaçã Ultra Compactada"
     lore_ultra:
       - ""
-      - "&7Contém: &f2304 Maçãs Compactadas"
-      - "&7Total: &d5.308.416 Maçãs"
+      - "&7Contém: &f2240 Maçãs Compactadas"
+      - "&7Total: &d5.017.600 Maçãs"
       - "&7Tipo: &5Ultra Plantação"
