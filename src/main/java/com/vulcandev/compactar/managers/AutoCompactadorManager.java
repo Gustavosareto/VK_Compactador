@@ -15,7 +15,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.UUID;
 
 /**
  * Gerenciador do Auto Compactador
@@ -77,8 +76,12 @@ public class AutoCompactadorManager {
             return;
         }
         
+        // Debug
+        plugin.getLogger().info("Auto Compactador detectado para: " + player.getName());
+        
         // Verificar permissão básica
         if (!player.hasPermission("compact.autocompactador")) {
+            plugin.getLogger().warning("Jogador " + player.getName() + " não tem permissão compact.autocompactador");
             return;
         }
         
@@ -107,21 +110,7 @@ public class AutoCompactadorManager {
         }
         
         // Verificar via NBT
-        if (NBTUtils.hasAutoCompactadorTag(item)) {
-            return true;
-        }
-        
-        // Fallback: verificar via lore
-        if (item.hasItemMeta() && item.getItemMeta().hasLore()) {
-            List<String> lore = item.getItemMeta().getLore();
-            for (String line : lore) {
-                if (line.contains("§k§a§c")) { // Código oculto de identificação
-                    return true;
-                }
-            }
-        }
-        
-        return false;
+        return NBTUtils.hasAutoCompactadorTag(item);
     }
 
     /**
@@ -130,6 +119,8 @@ public class AutoCompactadorManager {
     private void compactWithPermissions(Player player) {
         CompactManager compactManager = plugin.getCompactManager();
         Map<Material, Integer> result = new HashMap<>();
+        
+        plugin.getLogger().info("Iniciando compactação para: " + player.getName());
         
         for (CompactableItem compactableItem : compactManager.getCompactableItems().values()) {
             Material material = compactableItem.getMaterial();
@@ -149,12 +140,14 @@ public class AutoCompactadorManager {
             // Tentar compactar
             int compacted = compactManager.compactItems(player, material);
             if (compacted > 0) {
+                plugin.getLogger().info("Compactados " + compacted + " itens de " + material.name() + " para " + player.getName());
                 result.put(material, compacted);
             }
         }
         
         // Também tentar ultra compactar
         if (!result.isEmpty()) {
+            plugin.getLogger().info("Tentando ultra compactação...");
             compactManager.compactToUltra(player, result);
         }
     }
@@ -188,9 +181,6 @@ public class AutoCompactadorManager {
         for (String line : loreConfig) {
             lore.add(ColorUtils.colorize(line));
         }
-        
-        // Adicionar identificador oculto
-        lore.add("§k§a§c" + UUID.randomUUID().toString().substring(0, 8));
         
         meta.setLore(lore);
         item.setItemMeta(meta);
