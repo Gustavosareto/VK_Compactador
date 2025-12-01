@@ -80,10 +80,28 @@ O Auto Compactador é um **item físico** que deve estar no inventário do jogad
 
 ### Características:
 - ✅ Compacta automaticamente a cada 5 segundos (configurável)
+- ✅ Compactação **progressiva** - não precisa ter 2304 itens de uma vez
 - ✅ Respeita as permissões individuais por item
 - ✅ Visual customizável (material, nome, lore)
 - ✅ Identificação via NBT e lore oculta
 - ✅ Sistema de proteção anti-duplicação
+
+### Como Funciona:
+1. Obtenha o item com `/compact autocompactador`
+2. Mantenha o item no inventário (ocupa 1 slot)
+3. A cada 5 segundos, o sistema verifica seu inventário
+4. Se tiver 2304+ de algum item, compacta automaticamente
+5. Funciona de forma **progressiva** - vai compactando aos poucos conforme você coleta
+
+### Exemplo Prático:
+```
+Você está minerando com Auto Compactador no inventário:
+- Minera diamantes normalmente
+- A cada 5 segundos o sistema verifica
+- Quando atingir 2304 diamantes (36 stacks), compacta em 1 item
+- Você continua minerando e o processo se repete
+- Não precisa ter tudo de uma vez no inventário!
+```
 
 ### Como Usar:
 1. Obtenha o item com `/compact autocompactador`
